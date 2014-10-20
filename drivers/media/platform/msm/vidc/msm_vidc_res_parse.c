@@ -628,6 +628,10 @@ int read_platform_resources_from_dt(
 	res->sys_idle_indicator = of_property_read_bool(pdev->dev.of_node,
 			"qcom,enable-idle-indicator");
 
+	res->thermal_mitigable =
+			of_property_read_bool(pdev->dev.of_node,
+			"qcom,enable-thermal-mitigation");
+
 	rc = msm_vidc_load_freq_table(res);
 	if (rc) {
 		dprintk(VIDC_ERR, "Failed to load freq table: %d\n", rc);

@@ -240,8 +240,9 @@ struct msm8x16_wcd_priv {
 	/* cal info for codec */
 	struct fw_info *fw_data;
 	struct blocking_notifier_head notifier;
-	unsigned long status_mask;
 	int (*codec_spk_ext_pa_cb)(struct snd_soc_codec *codec, int enable);
+	unsigned long status_mask;
+
 };
 
 extern int msm8x16_wcd_mclk_enable(struct snd_soc_codec *codec, int mclk_enable,

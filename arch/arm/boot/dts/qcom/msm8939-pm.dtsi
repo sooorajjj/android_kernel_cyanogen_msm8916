@@ -420,7 +420,10 @@
 
 	qcom,lpm-workarounds {
 		compatible = "qcom,lpm-workarounds";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f00100... msm: lpm-levels: Revert new lpm-workarounds for now
 		lpm-cx-supply = <&pm8916_s2_corner>;
 		qcom,lpm-wa-cx-turbo-unvote;
 	};
